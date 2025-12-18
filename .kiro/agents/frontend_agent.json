@@ -1,0 +1,48 @@
+{
+  "name": "frontend_agent",
+  "description": "Frontend development specialist focused on React, TypeScript, and modern web development practices",
+  "prompt": "You are a frontend development expert specializing in React, TypeScript, and modern web development. Follow the established frontend standards strictly. Focus on component architecture, state management, performance optimization, and user experience. Always use proper naming conventions, organize code cleanly, and implement responsive designs with accessibility in mind.",
+  "mcpServers": {
+    "sqlite_database": {
+      "command": "/mnt/ollama/rishi-testing/mcp-server/run-sqlite.sh",
+      "args": [],
+      "env": {},
+      "disabled": false
+    },
+    "mui_components": {
+      "command": "/mnt/ollama/rishi-testing/mcp-server/run-mui.sh",
+      "args": [],
+      "env": {},
+      "disabled": false
+    },
+    "mysql_database": {
+      "command": "/mnt/ollama/rishi-testing/mcp-server/run-mysql.sh",
+      "args": [],
+      "env": {},
+      "disabled": false
+    }
+  },
+  "tools": [
+    "read",
+    "write", 
+    "shell",
+    "report",
+    "introspect",
+    "knowledge",
+    "thinking",
+    "todo",
+    "@sqlite_database",
+    "@mui_components",
+    "@mysql_database"
+  ],
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [
+    "file:///home/admin/.kiro/steering/frontend-standards.md",
+    "file:///home/admin/.kiro/steering/doc-standards.md"
+  ],
+  "hooks": {},
+  "toolsSettings": {},
+  "useLegacyMcpJson": true,
+  "model": null
+}

@@ -1,0 +1,35 @@
+{
+  "name": "backend_agent", 
+  "description": "Backend development specialist focused on Python, FastAPI, and scalable server-side architecture",
+  "prompt": "You are a backend development expert specializing in Python, FastAPI, and scalable server-side architecture. Follow the established backend standards strictly. Focus on API design, database architecture, security, performance, and maintainable code structure. Always use proper naming conventions, implement proper error handling, logging, and testing practices.",
+  "mcpServers": {
+    "sqlite_database": {
+      "command": "/mnt/ollama/rishi-testing/mcp-server/run-sqlite.sh",
+      "args": [],
+      "env": {},
+      "disabled": false
+    }
+  },
+  "tools": [
+    "read",
+    "write",
+    "shell", 
+    "aws",
+    "report",
+    "introspect",
+    "knowledge",
+    "thinking",
+    "todo",
+    "@sqlite_database"
+  ],
+  "toolAliases": {},
+  "allowedTools": [],
+  "resources": [
+    "file:///home/admin/.kiro/steering/backend-standards.md",
+    "file:///home/admin/.kiro/steering/doc-standards.md"
+  ],
+  "hooks": {},
+  "toolsSettings": {},
+  "useLegacyMcpJson": true,
+  "model": null
+}

@@ -1,0 +1,101 @@
+{
+  "mcpServers": {
+
+    "weather": {
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
+      "command": "/mnt/ollama/rishi-testing/nw-chat-poc/mcp/run-weather.sh",
+      "args": [],
+      "env": {},
+      "timeout": 120000,
+      "disabled": true,
+      "disabledTools": []
+    },
+    "kiro_chromadb": {
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
+      "command": "/mnt/ollama/rishi-testing/nw-chat-poc/mcp/run-kiro-chromadb.sh",
+      "args": [],
+      "env": {},
+      "timeout": 120000,
+      "disabled": true,
+      "disabledTools": []
+    },
+    "network_data": {
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
+      "command": "/mnt/ollama/rishi-testing/nw-chat-poc/mcp/run-network.sh",
+      "args": [],
+      "env": {},
+      "timeout": 120000,
+      "disabled": true,
+      "disabledTools": []
+    },
+    "excel_data": {
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
+      "command": "/mnt/ollama/rishi-testing/nw-chat-poc/mcp/run-excel.sh",
+      "args": [],
+      "env": {},
+      "timeout": 120000,
+      "disabled": true,
+      "disabledTools": []
+    },
+    "mui_components": {
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
+      "command": "/mnt/ollama/rishi-testing/mcp-server/run-mui.sh",
+      "args": [],
+      "env": {},
+      "timeout": 120000,
+      "disabled": false,
+      "disabledTools": []
+    },
+    "mysql_database": {
+      "url": "",
+      "headers": {},
+      "oauthScopes": [
+        "openid",
+        "email",
+        "profile",
+        "offline_access"
+      ],
+      "command": "/mnt/ollama/rishi-testing/mcp-server/run-mysql.sh",
+      "args": [],
+      "env": {},
+      "timeout": 120000,
+      "disabled": false,
+      "disabledTools": []
+    }
+  }
+}

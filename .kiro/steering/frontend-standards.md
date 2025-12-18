@@ -1,0 +1,21 @@
+## React Frontend Standards 
+
+- Use `PascalCase` for React component files and component names (e.g., `MainPage.tsx`).  
+- Use `kebab-case` for directories and feature folders (e.g., `ip-subnet-report`, `personal-dashboard`).  
+- Use `camelCase` for hooks, always starting with `use` (e.g., `useFeatureContext.ts`, `useIPSubnetReportContext.tsx`).  
+- Use `PascalCase` ending with `Context` or `Provider` for context-related files (e.g., `FeatureContext.tsx`, `FeatureProvider.tsx`).  
+- Use `constants.ts` and `types.ts` as standard names for feature-level constants and types.  
+- Name pages with `PascalCase` ending in `Page` (e.g., `MainPage.tsx`, `SubnetReportPage.tsx`).  
+- Use default export where the component name matches the file name.  
+- Use `index.ts` as a barrel file for grouped exports (components, hooks, etc.).  
+- Organize components into `atoms/`, `molecules/`, `organisms/`, `templates/`, and `concretes/{feature-name}/`.  
+- Inside each feature folder, use `components/`, `context/`, `hooks/`, `constants.ts`, `types.ts`, and `MainPage.tsx`.  
+- Use `PascalCase` for TypeScript interfaces and `camelCase` for type aliases.  
+- Keep props interfaces close to the component, and keep them small and clear.  
+- Use React Context for feature-level shared state and custom hooks to consume it (e.g., `useFeatureContext`).  
+- Use TanStack Query for server data fetching and caching; keep queries inside `hooks/` files.  
+- Use Tailwind (or chosen utility classes) consistently for spacing, colors, and layout.  
+- Keep imports ordered: React → third-party libs → shared UI components → local components → hooks/utils → types/constants.  
+- Use error boundaries for critical feature sections to avoid full-page crashes.  
+- Prefer lazy loading (`React.lazy` + `Suspense`) for heavy or rarely used components.  
+- Use `memo`, `useMemo`, and `useCallback` to optimize expensive components and computations when necessary.

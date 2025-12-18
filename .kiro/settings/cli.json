@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "weather": {
+      "command": "node",
+      "args": [
+        "/home/admin/rishi-testing/nw-chat-poc/mcp/weather_server.js"
+      ]
+    }
+  },
+  "mcp.loadedBefore": true
+}
