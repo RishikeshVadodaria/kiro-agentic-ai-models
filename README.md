@@ -8,6 +8,7 @@ A full-stack user and task management application built with FastAPI and React.
 - **Task Management**: Create and manage tasks with priorities and due dates
 - **Modern UI**: React frontend with Material-UI components
 - **RESTful API**: FastAPI backend with automatic documentation
+- **MCP Servers**: Model Context Protocol servers for Material-UI and MySQL integration
 
 ## Tech Stack
 
@@ -85,6 +86,39 @@ The frontend will be available at `http://localhost:5173`
 - `PUT /api/v1/tasks/{task_id}` - Update task
 - `DELETE /api/v1/tasks/{task_id}` - Delete task
 
+### MCP Server Setup
+
+1. Navigate to MCP server directory:
+```bash
+cd mcp-server
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run MCP servers:
+
+**Material-UI Server:**
+```bash
+./run-mui.sh
+# or
+node mui-server.ts
+```
+
+**MySQL Server:**
+```bash
+./run-mysql.sh
+# or
+node mysql_server.ts
+```
+
+**Test SQLite:**
+```bash
+node test.js
+```
+
 ## Project Structure
 
 ```
@@ -105,6 +139,12 @@ agentic-models/
 │   │   └── concretes/     # Feature modules
 │   ├── package.json
 │   └── vite.config.ts
+├── mcp-server/
+│   ├── mui-server.ts      # Material-UI MCP server
+│   ├── mysql_server.ts    # MySQL MCP server
+│   ├── package.json       # Node.js dependencies
+│   ├── run-*.sh          # Server run scripts
+│   └── tsconfig.json     # TypeScript config
 └── README.md
 ```
 
