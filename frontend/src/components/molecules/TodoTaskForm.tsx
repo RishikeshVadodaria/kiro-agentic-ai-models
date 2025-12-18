@@ -54,7 +54,7 @@ export default function TodoTaskForm({ onTaskCreated }: TodoTaskFormProps) {
         completed: false,
         due_date: ''
       });
-    } catch (err) {
+    } catch {
       setError('Failed to create task');
     } finally {
       setLoading(false);

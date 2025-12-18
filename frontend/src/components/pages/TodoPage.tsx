@@ -15,16 +15,16 @@ export default function TodoPage({ username, onLogout }: TodoPageProps) {
     setTasks(prev => [...prev, newTask]);
   };
 
-  const loadTasks = async () => {
-    try {
-      const allTasks = await taskApi.getTasks();
-      setTasks(allTasks);
-    } catch (error) {
-      console.error('Failed to load tasks:', error);
-    }
-  };
-
   useEffect(() => {
+    const loadTasks = async () => {
+      try {
+        const allTasks = await taskApi.getTasks();
+        setTasks(allTasks);
+      } catch (error) {
+        console.error('Failed to load tasks:', error);
+      }
+    };
+    
     loadTasks();
   }, []);
 
